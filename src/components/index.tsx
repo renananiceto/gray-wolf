@@ -1,0 +1,5 @@
+export {Menu} from "./Menu"
+export {MenuLateral} from "./MenuLateral"
+export {Content} from "./Content"
+export {Footer} from "./Footer"
+export {Ad} from "./Ad"
