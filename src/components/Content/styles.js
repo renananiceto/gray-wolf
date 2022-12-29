@@ -57,14 +57,18 @@ export const Atri = styled.ul`
 
 export const ImageG = styled.img`
   grid-column: 1 /-1;
+  margin: 0 auto;
+  width: 620px;
 `;
 
 export const ImageM = styled.img`
   grid-row: span 2;
   align-self: end;
+  width: 300px;
 `;
 export const ImageM2 = styled.img`
   align-self: end;
+  width: 300px;
 `;
 
 export const Info = styled.div`

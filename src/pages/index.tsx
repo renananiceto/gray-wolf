@@ -1,1 +1,6 @@
 export {Home} from "./Home"
+export {Cervo} from "./Cervo"
+export {Leao} from "./Leao"
+export {Vaca} from "./Vaca"
+export {Ovelha} from "./Ovelha"
+export {Abelha} from "./Abelha"

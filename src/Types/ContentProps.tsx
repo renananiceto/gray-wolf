@@ -1,0 +1,23 @@
+export type ContentProps = { 
+  nome?:string;
+  familia?:string;
+  peso?:string;
+  idade?:string;
+  descricao?:string;
+  pPurple?:string;
+  desc1?:string;
+  desc2?:string;
+  cit?:string;
+  desc3?:string;
+  desc4?:string;
+  listImg?:string;
+  listitem?:string[];
+  listImg2?:string;
+  listImg3?:string;
+  listitem1?:string;
+  listitem2?:string;
+  listitem3?:string;
+  listitem4?:string;
+  listitem5?:string;
+  listitem6?:string;
+};

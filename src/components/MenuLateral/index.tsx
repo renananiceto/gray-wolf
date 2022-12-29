@@ -13,14 +13,14 @@ export const MenuLateral = () => {
     <S.Container>
       <ul>
         <li>
-          <S.Lin to={"/"}>
+          <S.Lin to={"/Cervo"}>
             <a href="">
               <img src={Cervo} alt="#" />
             </a>
           </S.Lin>
         </li>
         <li>
-          <S.Lin to={"/"}>
+          <S.Lin to={"/Leao"}>
             <a href="">
               <img src={Leao} alt="#" />
             </a>
@@ -34,23 +34,16 @@ export const MenuLateral = () => {
           </S.Lin>
         </li>
         <li>
-          <S.Lin to={"/"}>
+          <S.Lin to={"/Vaca"}>
             <a href="">
               <img src={Vaca} alt="#" />
             </a>
           </S.Lin>
         </li>
         <li>
-          <S.Lin to={"/"}>
+          <S.Lin to={"/Ovelha"}>
             <a href="">
               <img src={Ovelha} alt="#" />
-            </a>
-          </S.Lin>
-        </li>
-        <li>
-          <S.Lin to={"/"}>
-            <a href="">
-              <img src={Abelha} alt="#" />
             </a>
           </S.Lin>
         </li>
