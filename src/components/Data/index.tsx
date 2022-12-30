@@ -11,8 +11,8 @@ import vaca1 from "../../imagens/vaca1.jpg";
 import vaca2 from "../../imagens/vaca2.jpg";
 import vaca3 from "../../imagens/vaca3.jpg";
 import ovelha1 from "../../imagens/ovelha1.jpg";
-import ovelha2 from "../../imagens/ovelha2.jpg";
 import ovelha3 from "../../imagens/ovelha3.jpg";
+import ovelha2 from "../../imagens/ovelha2.jpg";
 
 export const data = [
   {
