@@ -5,6 +5,7 @@ import Wolf2 from "../../imagens/wolf2.jpg";
 import Wolf3 from "../../imagens/wolf3.jpg";
 import { ContentProps } from "../../Types/ContentProps";
 import "aos/dist/aos.css";
+import CountUp from "react-countup";
 
 export const Content = ({
   nome,
@@ -22,7 +23,6 @@ export const Content = ({
   listImg2,
   listImg3,
   listitem,
-
 }: ContentProps) => {
   return (
     <S.Container data-aos="zoom-in">
@@ -32,11 +32,13 @@ export const Content = ({
       </S.Title>
       <S.Caract>
         <div>
-          <S.Number>{peso}</S.Number>
+          <S.Number>
+            <CountUp start={0} end={Number(peso)} duration={3} />
+          </S.Number>
           <S.Rotu>Kg</S.Rotu>
         </div>
         <div>
-          <S.Number>{idade}</S.Number>
+          <S.Number> <CountUp start={0} end={Number(idade)} duration={3} /></S.Number>
           <S.Rotu>Age</S.Rotu>
         </div>
       </S.Caract>
@@ -48,18 +50,20 @@ export const Content = ({
       <p>{desc2}</p>
       <S.ParagrapG2 data-aos="zoom-in">{cit}</S.ParagrapG2>
       <S.Atri data-aos="fade-right">
-        {
-          listitem?.map((item)=>(
-            <li>{item}</li>
-          ))
-        }
+        {listitem?.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </S.Atri>
       <S.Info>
         <p>{desc3}</p>
         <p>{desc4}</p>
       </S.Info>
-      <S.ImageG data-aos="fade-up"
-     data-aos-duration="1000" src={listImg3} alt="#" />
+      <S.ImageG
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        src={listImg3}
+        alt="#"
+      />
     </S.Container>
   );
 };

@@ -46,7 +46,7 @@ export const data = [
     ],
   },
   {
-    nome: "Veado vermelho",
+    nome: "Veado Vermelho",
     familia: "da família Cervidae",
     peso: "240",
     idade: "22 ",
