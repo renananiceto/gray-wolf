@@ -4,6 +4,7 @@ import Wolf1 from "../../imagens/wolf1.jpg";
 import Wolf2 from "../../imagens/wolf2.jpg";
 import Wolf3 from "../../imagens/wolf3.jpg";
 import { ContentProps } from "../../Types/ContentProps";
+import "aos/dist/aos.css";
 
 export const Content = ({
   nome,
@@ -21,15 +22,10 @@ export const Content = ({
   listImg2,
   listImg3,
   listitem,
-  listitem1,
-  listitem2,
-  listitem3,
-  listitem4,
-  listitem5,
-  listitem6,
+
 }: ContentProps) => {
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in">
       <S.Title>
         <h1>{nome}</h1>
         <span>{familia}</span>
@@ -50,8 +46,8 @@ export const Content = ({
       <S.ImageM2 src={listImg2} alt="#" />
       <p>{desc1}</p>
       <p>{desc2}</p>
-      <S.ParagrapG2>{cit}</S.ParagrapG2>
-      <S.Atri>
+      <S.ParagrapG2 data-aos="zoom-in">{cit}</S.ParagrapG2>
+      <S.Atri data-aos="fade-right">
         {
           listitem?.map((item)=>(
             <li>{item}</li>
@@ -62,7 +58,8 @@ export const Content = ({
         <p>{desc3}</p>
         <p>{desc4}</p>
       </S.Info>
-      <S.ImageG src={listImg3} alt="#" />
+      <S.ImageG data-aos="fade-up"
+     data-aos-duration="1000" src={listImg3} alt="#" />
     </S.Container>
   );
 };

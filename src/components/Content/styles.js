@@ -49,8 +49,8 @@ export const Atri = styled.ul`
 
   li {
     color: #fff;
-    font-size: 1.125em;
     padding: 15px;
+    font-size: 1.125em;
     border-bottom: solid 2px #b07dfb;
   }
 `;

@@ -1,9 +1,19 @@
+import React, { useEffect } from "react"
+import AOS from 'aos';
 import styles from "./styles.module.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Cervo, Leao, Vaca, Ovelha, Abelha } from "../pages";
 import { Menu, MenuLateral, Footer, Ad } from "../components";
 
 export default function Router() {
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      delay: 600,
+    });
+  }, [])
+
   return (
     <BrowserRouter>
       <div className={styles["container"]}>
