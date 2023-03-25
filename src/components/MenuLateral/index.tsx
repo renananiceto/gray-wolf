@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "aos/dist/aos.css";
 
 import * as S from "./styles";
@@ -7,9 +7,20 @@ import Leao from "../../imagens/leao.svg";
 import Gato from "../../imagens/gato.svg";
 import Vaca from "../../imagens/vaca.svg";
 import Ovelha from "../../imagens/ovelha.svg";
+import { useLocation} from "react-router-dom";
+import { useDispatch } from "react-redux";
+
 
 
 export const MenuLateral = () => {
+  const dispatch = useDispatch()
+  const location = useLocation()
+
+  useEffect(()=>{
+    dispatch({type:"SET_ANIMALS",payload:location})
+   
+  },[location])
+  
   return (
     <S.Container >
       <ul>
